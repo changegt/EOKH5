@@ -23,6 +23,33 @@
   height: 0.39rem;
 }
 
+/* setion module */
+.sectionModule {
+  padding-top: 0.7rem;
+  text-align: center;
+}
+
+.sectionModule .title {
+  font-weight: bold;
+  margin-bottom: 0.26rem;
+}
+
+.section1-title {
+  position: absolute;
+  top: 2.6rem;
+  left: 50%;
+  width: 2.2rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #fff;
+  background: #432D1E;
+  border-radius: 0.2rem;
+  text-align: center;
+  margin-left: -1.1rem;
+  font-weight: bold;
+  font-size: 0.18rem;
+}
+
 /* section2 */
 .section2 {
   text-align: center;
@@ -42,6 +69,8 @@
   margin: 0 auto;
   font-size: 0.12rem;
   font-weight: 500;
+  text-align: left;
+  text-indent: 0.24rem;
 }
 
 .section2 .note {
@@ -53,6 +82,8 @@
   font-weight: bold;
   color: #666;
   border-top: solid 1px #ccc;
+  text-align: left;
+  text-indent: 0.24rem;
 }
 
 .section2 .section2-img {
@@ -88,6 +119,27 @@
   height: 1.4rem;
 }
 
+/* section4 */
+.section4-slider-wrap {
+  height: 3.6rem;
+  margin-bottom: 0.6rem;
+}
+
+/* section5 */
+.section5 {
+  color: #fff;
+}
+
+.product-intro {
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.section5 .section5Img{
+  width: 2.45rem;
+  margin-left: -0.55rem;
+}
+
 /* section7 */
 .section7 {
   padding-top: 0.7rem;
@@ -108,7 +160,7 @@
 .section7-item {
   float: left;
   width: 1.15rem;
-  height: 0.36rem;
+  /* height: 0.36rem; */
   margin-bottom: 0.26rem;
 }
 
