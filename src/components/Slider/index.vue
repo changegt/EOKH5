@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-container">
+  <div :class="`swiper-container swiper-conatiner-${type}`">
     <div class="swiper-wrapper">
       <div
         class="swiper-slide"
@@ -7,7 +7,7 @@
         :key="index"
       >
         <div :class="curClass">
-          <img :src="item.img" alt="" class="img">
+          <img v-lazy="item.img" alt="" class="img">
           <h3>{{item.title}}</h3>
           <template v-if="typeof item.desc === 'string'">
             <p >{{item.desc}}</p>
@@ -34,7 +34,7 @@ import intro4 from '../../assets/img/page1/intro-04.png'
 
 import adv1 from '../../assets/img/page1/adv-1.png'
 import adv2 from '../../assets/img/page1/adv-2.png'
-import adv3 from '../../assets/img/page1/adv-3.png'
+import adv3 from '../../assets/img/page1/adv-3.jpg'
 
 export default {
   name: 'slider',
@@ -86,11 +86,27 @@ export default {
   },
 
   mounted () {
-    this.sliderObj = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination'
-      }
-    })
+    const className = `.swiper-conatiner-${this.type}`
+
+    if (this.type === 'intro') {
+      window.sliderObj1 = new Swiper(className, {
+        pagination: {
+          el: `${className} .swiper-pagination`,
+          clickable: true
+        }
+      })
+    } else {
+      window.sliderObj2 = new Swiper(className, {
+        pagination: {
+          el: `${className} .swiper-pagination`,
+          clickable: true
+        }
+      })
+    }
+  },
+
+  updated () {
+    console.log(1)
   }
 }
 </script>
@@ -127,6 +143,7 @@ export default {
 
 .slider-adv img {
   width: 1.05rem;
+  height: 1.62rem;
   margin-bottom: 0.3rem;
 }
 
