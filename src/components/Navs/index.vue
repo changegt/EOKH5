@@ -66,10 +66,6 @@ export default {
     },
 
     handleJump (path) {
-      if (path === '/download') {
-        alert('敬请期待')
-        return
-      }
       document.body.style.overflow = 'auto'
       document.body.scrollTop = document.documentElement.scrollTop = 0
 

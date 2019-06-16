@@ -32,7 +32,7 @@ import download1 from '../assets/img/page3/download-1.png'
 import download2 from '../assets/img/page3/download-2.png'
 import download3 from '../assets/img/page3/download-3.png'
 
-import downloadQRCode from '../assets/img/page3/download-qrcode.png'
+import downloadQRCode from '../assets/img/page3/download-qrcode.jpg'
 
 export default {
   name: 'cooperation',

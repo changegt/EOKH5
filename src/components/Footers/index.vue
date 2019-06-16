@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import downloadQRCode from '../../assets/img/page3/download-qrcode.png'
+import downloadQRCode from '../../assets/img/page3/download-qrcode1.jpeg'
 export default {
   name: 'footers',
 
